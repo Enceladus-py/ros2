@@ -1,0 +1,17 @@
+Create executables:
+
+colcon build --packages-select my_py_pkg
+
+Run the publisher:
+
+ros2 run my_py_pkg number_publisher
+
+Run the subscriber (also a publisher):
+
+ros2 run my_py_pkg number_counter
+
+To see the input coming from the topic "number_count":
+
+ros2 topic echo /number_count
+
+NOTE: You can build the nodes with cpp if you want.
